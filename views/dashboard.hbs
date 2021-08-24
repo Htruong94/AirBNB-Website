@@ -1,0 +1,20 @@
+{{!--
+    //WEB322 Assignment 4
+    //Hung Truong - 147779193
+    //Email: htruong19@myseneca.ca
+    //Date: August 06, 2021
+--}}
+
+<!DOCTYPE html>
+{{#if session.user.admin}} 
+<h1>
+Welcome Administrator {{session.user.fname}} {{session.user.lname}} </br>
+    <div id = "adminNavigation">
+        <a href="dashboard/add" id="add">Add Room</a> |
+        <a href="dashboard/edit" id="edit">Edit Room</a> |
+        <a href="dashboard/list" id="list">List Rooms</a>
+    </div>
+</h1>
+{{else}}
+<h1>Welcome to WEBBNB {{session.user.fname}} {{session.user.lname}}! Thank you for joining WEBBNB, enjoy your stay in any of our room selection!</h1>
+{{/if}}

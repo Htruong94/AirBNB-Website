@@ -1,0 +1,53 @@
+{{!--
+    //WEB322 Assignment 5
+    //Hung Truong - 147779193
+    //Email: htruong19@myseneca.ca
+    //Date: August 10, 2021
+--}}
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>WEB322 Assignment</title>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <h1 id="headerName">
+            <img src = "/images/logo.png" alt = "logo" id="logo"/>
+            <a href="/" id ="home">WEBBNB</a>
+        </h1>
+
+        <h2 id="headerDesc">
+            The cheapest BNB rooms you can find on the WEB!
+        </h2>    
+        
+        <div id = "navigation">
+            | <a href="/" id="home">Homepage</a> |
+            <a href="/room" id="room">Room</a> |
+            {{#if session.user}}
+            <a href= "/dashboard" id="dashboard">Dashboard</a> |
+            <a href="/login/logout" id="logout">Logout of {{session.user.username}}</a> |
+            {{else}}
+            <a href="/registration" id="registration">Registration</a> |
+            <a href="/login" id="login">Login</a> |
+            {{/if}}
+        </div>
+
+        <div id = "main">
+            {{{body}}}
+        </div>
+    </body>
+
+    <footer>
+        <div id="foot">
+            <a href="/" id="home">Homepage</a> |
+            <a href="/registration" id="registration">Registration</a> |
+            <a href="/room" id="room">Room</a> |
+            <a href="/login" id="login">Login</a> <br/>
+            Twitter: <a href="https://www.twitter.com/accountNotAvailable123"><img src="images/TwitterIcon.png"></a> |
+            Facebook: <a href="https://www.facebook.com/accountNotAvailable123"><img src="images/FacebookLogo.png"></a>
+        </div>
+    </footer>
+</html>

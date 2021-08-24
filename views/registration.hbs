@@ -1,0 +1,24 @@
+{{!--
+//WEB322 Assignment 2
+//Hung Truong - 147779193
+//Email: htruong19@myseneca.ca
+//Date: July 01, 2021
+--}}
+
+<!DOCTYPE html>
+<h1>Registration</h1>
+
+<form action = "/registration" method="POST" enctype="multipart/form-data">
+    <input type="text" name="Username" size="60" placeholder="Enter your username"/></br>
+    <input type="email" name="Email" size="60" placeholder="Enter your email address"/><br/>
+    <input type="text" name="FName" size="60" placeholder="Enter your first name"/><br/>
+    <input type="text" name="LName" size="60" placeholder="Enter your last name"/><br/>
+    <input type="password"  name="Password" size="60" placeholder="Create your password"/><br/>
+    Enter your Birthday<br/>
+    <input type="date" name="Birthday"/><br/>
+    <input type="submit" value="Submit">
+</form>
+
+{{#if data.invalid_flag}}
+<br/><p><b>{{data.errormsg}}</b></p>
+{{/if}}

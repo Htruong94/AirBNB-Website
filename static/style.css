@@ -1,0 +1,144 @@
+/*
+    //WEB322 Assignment 5
+    //Hung Truong - 147779193
+    //Email: htruong19@myseneca.ca
+    //Date: August 10, 2021
+*/
+#logo{
+    width:80pt;
+    vertical-align: middle;
+}
+
+#headerName{
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Lucida Sans';
+    background-color: #59bdff;
+    width: auto;
+    margin: 0pt 50pt;
+    padding: 5pt;
+    border: 10pt ridge aqua;
+}
+
+#headerDesc{
+    text-align: center;
+    margin: 0pt 50pt 0pt;
+    vertical-align: middle;
+    background-color: #59bdff;
+    border: 5pt ridge aquamarine;
+    font-style: italic;
+    font-family: 'Lucida Sans Regular';
+}
+
+#navigation{
+    text-align: center;
+    margin: 0pt 50pt 0pt;
+    vertical-align: middle;
+    background-color: #59bdff;
+    border: 5pt ridge aquamarine;
+    font-family: 'Lucida Sans Regular';
+}
+
+body {
+    background-image: url("images/background.jpeg");
+    background-attachment: fixed;
+    background-size: 100%;
+    background-repeat: repeat;
+}
+
+#main{
+    position: relative;
+    margin: 0pt 182pt 0pt 182pt;
+    padding: 10pt 10pt 10pt 10pt;
+    border: 2pt ridge;
+    background-color: #cbd0ff;
+    text-align: center;
+}
+
+#Booking{
+    text-align: left;
+    position: relative;
+    border: 5pt ridge;
+    padding: 5pt 5pt 5pt 5pt;
+}
+
+#Promotion{
+    position: relative;
+    text-align: center;
+    border: 5pt ridge;
+    padding: 5pt 5pt 5pt 5pt;
+}
+
+#snap{
+    width: 95%;
+    height: auto;
+}
+
+#vid{
+    width: 70%;
+    height: auto;
+    padding: 20pt 20pt 20pt 20pt;
+}
+
+#Informational{
+    position: relative;
+    text-align: center;
+    border: 5pt ridge;
+    padding: 5pt 5pt 5pt 5pt;
+}
+
+footer {
+    position: relative;
+    text-align: center;
+    margin: 0pt 182pt 0pt 182pt;
+    padding: 10pt 10pt 10pt 10pt;
+    border: 2pt ridge;
+    background-color: azure;
+}
+  
+footer img {
+    width: 20px;
+}
+
+.grid-container{
+    display:inline-grid;
+    grid-gap:auto;
+    grid-template-rows: 500px 500px;
+    grid-template-columns: 250px 250px 250px;
+    border: 1pt ridge;
+}
+
+.grid-item{
+    border: 3pt ridge;
+    background-color: aliceblue;
+    text-align: center;
+    padding: 5pt 5pt 5pt 5pt;
+}
+
+.grid-item img{
+    max-width: 200px; 
+    max-height: 150px;  
+}
+
+#roomList{
+    border: 3pt ridge;
+    background-color: aliceblue;
+}
+
+#roomDesc{
+    border: 3pt ridge;
+    background-color: aliceblue;
+    padding: 10pt 10pt 10pt 10pt;
+}
+
+.container img {
+    max-width: 100%;
+    height: auto;
+}
+
+#book {
+    border: 3pt ridge;
+    background-color: aliceblue;
+    padding: 20pt 20pt 20pt 20pt;
+}
+

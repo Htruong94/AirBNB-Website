@@ -1,0 +1,39 @@
+{{!--
+//WEB322 Assignment 2
+//Hung Truong - 147779193
+//Email: htruong19@myseneca.ca
+//Date: July 01, 2021
+--}}
+
+<!DOCTYPE html>
+<h1>Welcome to WEBBNB, the place to book an unique stay</h1>
+<div id = "Booking">
+    <form>
+        <p style="font-size:20px"><b>Book where you like!</b></p>
+        Where do you want to stay? <input list="cities" name="city" size="30" placeholder="Select a City" /> <br/>
+        <datalist id="cities">
+            <option value = "Toronto"></option>
+            <option value = "Vancouver"></option>
+            <option value = "Calgary"></option>
+            <option value = "Montreal"></option>
+        </datalist>
+        Check-in Date  <input type="date" name="CinDate"><br/>
+        Check-out Date <input type="date" name="CoutDate"><br/>
+        Number of Guests <input type="number" name="guestQuantity" placeholder="Enter the number of guests"><br/>
+        <input type="submit" value="Submit"/>
+    </form>
+</div>
+
+<div id = "Promotion">
+    <p style="font-size:40px"><b>Current Promotions</b></p>
+    
+    <p style="font-size:50px"><b>20% OFF YOUR FIRST STAY ANYWHERE!</b></p>
+</div>
+
+<div id = "Informational">
+    <p style="font-size:20px"><b>Information on WEBBNB</b></p>
+    <img src="images/airbnbSnap.jpg" id="snap"> <br/> 
+    WEBBNB is an AirBNB website that allows the customer to book a unique stay at a place for a duration. <br/>
+    The following video will explain the concept of AirBNB. <br/>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/evqnIKVX8RM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id = "vid"></iframe>
+</div>

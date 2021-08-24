@@ -1,0 +1,10 @@
+//WEB322 Assignment - Links
+//Hung Truong - 147779193
+//Email: htruong19@myseneca.ca
+//Date: July 01, 2021
+
+Heroku Link:
+https://desolate-bastion-20180.herokuapp.com/
+
+Github Link:
+https://github.com/htruong19/web322assignment

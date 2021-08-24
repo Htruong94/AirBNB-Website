@@ -1,0 +1,35 @@
+{{!--
+    //WEB322 Assignment 5
+    //Hung Truong - 147779193
+    //Email: htruong19@myseneca.ca
+    //Date: August 10, 2021
+--}}
+
+<!DOCTYPE html>
+<form class = "/room" method = POST>
+    <datalist id="cities">
+        <option value = "Toronto"></option>
+        <option value = "Vancouver"></option>
+        <option value = "Calgary"></option>
+        <option value = "Montreal"></option>
+        <option value = "All"></option>
+    </datalist>
+    <input list="cities" name="Search" size="30" placeholder="Search for a city" /> <br/>
+    <input type = "submit" value = "Submit">
+</form> 
+<h1>Rooms Available to Rent</h1>
+<div class="grid-container" id = "roomGrid">
+    {{#each roomData}}
+    <div class="grid-item">
+        <img src="images/room/{{imgsrc}}" id="roomImg"><br/>
+        <h2 id="roomTitle">{{title}} </br> {{desc}} </h2>
+        <p>
+            Rate: ${{price}}/night </br>
+            Location: {{location}}
+            <form action = "/room/{{_id}}" method = POST>
+                <input type="submit" value="See more detail">
+            </form>
+        </p>
+    </div>
+    {{/each}}
+</div>

@@ -1,0 +1,21 @@
+{{!--
+    //WEB322 Assignment 4
+    //Hung Truong - 147779193
+    //Email: htruong19@myseneca.ca
+    //Date: August 06, 2021
+--}}
+
+<!DOCTYPE html>
+<h1>Add Room</h1>
+<form action = "/addRoom" method="POST" enctype="multipart/form-data">
+    <input type="text" name="Title" size="60" placeholder="Enter the title of the room"/></br>
+    <input type="text" name="Desc" size="60" placeholder="Enter a small description of room"/><br/>
+    <input type="number" name="Price" size="90" placeholder="Enter the price rate per night"/><br/>
+    <input type="text" name="Location" size="60" placeholder="Enter the location of the room"/><br/>
+    <input type="file" name="Image" size ="60"> <br/>
+    <input type="submit" value="Submit">
+</form>
+
+{{#if data.invalid_flag}}
+<br/><p><b>{{data.errormsg}}</b></p>
+{{/if}}

@@ -1,0 +1,21 @@
+{{!--
+    //WEB322 Assignment 4
+    //Hung Truong - 147779193
+    //Email: htruong19@myseneca.ca
+    //Date: August 06, 2021
+--}}
+
+<!DOCTYPE html>
+<h1>List of all Rooms</h1>
+<dl id = "roomList">
+{{#each roomData}}
+    <dt>Object ID: {{_id}}</dt>
+    <dd>
+        Image source: {{imgsrc}} <br/>
+        Title: {{title}} <br/>
+        Description: {{desc}} <br/>
+        Rate: {{price}} <br/>
+        Location: {{location}} <br/> <br/>
+    </dd>
+{{/each}}
+</dl>

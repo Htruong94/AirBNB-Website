@@ -1,0 +1,48 @@
+{{!--
+    //WEB322 Assignment 5
+    //Hung Truong - 147779193
+    //Email: htruong19@myseneca.ca
+    //Date: August 10, 2021
+--}}
+
+<!DOCTYPE html>
+<h1>Book this room</h1>
+<div class="container">
+    <div id="roomDesc">
+        <img src="images/room/{{roomData.imgsrc}}" id="roomImgDesc"><br/>
+        <h2 id="roomTitle">{{roomData.title}} </br> {{roomData.desc}} </h2>
+        <p>
+            Rate: ${{roomData.price}}/night </br>
+            Location: {{roomData.location}}
+        </p>
+    </div>
+
+`   <div id = "book">
+        {{#if estimate_flag}}
+            <p>
+                Check-in Date: {{book.cinDate}} </br>
+                Check-out Date: {{book.coutDate}} </br>
+                Total days: {{book.days}} </br>
+                Number of guests: {{book.numGuest}} </br>
+                Total Price: ${{book.totalPrice}} </br>
+                <form action="/roomDesc/book" method = "POST">
+                    <input type = "submit" value = "Book Room"/>
+                </form>
+                <form action="/roomDesc/back" method = "POST">
+                    <input type = "submit" value = "Back"/>
+                </form>
+            </p>
+        {{else}}
+            <form action="/roomDesc" method = "POST">
+                Check-in Date  <input type="date" name="cinDate"><br/>
+                Check-out Date <input type="date" name="coutDate"><br/>
+                Number of Guests <input type="number" name="guestQuantity" placeholder="Enter the number of guests"><br/>
+                <input type="submit" value="Get Estimate"/>
+            </form>
+            {{#if data.invalid_flag}}
+                <br/><p><b>{{data.errormsg}}</b></p>
+            {{/if}}
+        {{/if}}
+
+    </div>
+</div>

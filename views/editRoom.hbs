@@ -1,0 +1,28 @@
+{{!--
+    //WEB322 Assignment 4
+    //Hung Truong - 147779193
+    //Email: htruong19@myseneca.ca
+    //Date: August 06, 2021
+--}}
+
+<!DOCTYPE html>
+<h1>Edit Room</h1>
+<div class="grid-container" id = "roomGrid">
+    {{#each roomData}}
+    <div class="grid-item">
+        <img src="images/room/{{imgsrc}}" id="roomImg"><br/>
+        <h2 id="roomTitle">Title:{{title}} </br> Description:{{desc}} </h2>
+        <p>
+            Rate: ${{price}}/night </br>
+            Location: {{location}}
+
+            <form action = "/editRoom/{{_id}}" method = POST>
+                <input type="text" name="Title" size="25" placeholder="Enter a new title of the room"/></br>
+                <input type="text" name="Desc" size="25" placeholder="Enter a new description of room"/><br/>
+                <input type="number" name="Price" size="90" placeholder="Enter a new price rate per night"/><br/>
+                <input type="submit" value="Submit">
+            </form>
+        </p>
+    </div>
+    {{/each}}
+</div>
